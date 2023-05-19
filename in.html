@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./сss/style.css">
+  <link rel="stylesheet" href="./сss/mobile.css">
+  <link rel="stylesheet" href="./сss/jqueryItem.css">
+  <link rel="stylesheet" href="./сss/cardCourse.css">
+  <link rel="stylesheet" href="./сss/cardNew.css">
+  <link rel="stylesheet" href="./сss/mainContent.css">
+  <link rel="stylesheet" href="./сss/header.css">
+  <link rel="stylesheet" href="./сss/footer.css">
+  <link rel="stylesheet" href="./сss/formSend.css">
+  <link rel="stylesheet" href="./сss/contact.css">
+  <link rel="stylesheet" href="./сss/theme.css">
+  <link rel="stylesheet" href="./сss/backButton.css">
+  <script src="./js/jquery-3.6.3.min.js"></script>
+  <link rel="stylesheet" href="./fonts/css/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <table style="margin-left:170px;">
+      <tr>
+        <td>
+          <li><img id="logo" width="184px" src="./image/logo2.png" alt=""></li>
+        </td>
+        <td>
+          <ul>
+            <a id="toogle-Lernes-on" href="#">
+              <li key="course" class="lang" id="itemList"><span>курсы</span></li>
+            </a>
+            <a id="toogle-Profoser-on" href="#">
+              <li key="teachers" class="lang" id="itemList"><span>преподователи</span></li>
+            </a>
+            <a id="toogle-contacts-on" href="#">
+              <li key="contancts" class="lang" id="itemList"><span>контакты</span></li>
+            </a>
+            <a id="changeTheme" href="#">
+              <li id="itemList">
+                <div class="dropdown">
+                  <span key="theme" class="lang">Тема</span>
+                  <div class="dropdown-content">
+                    <table>
+                      <tr>
+                        <td>
+                          <table>
+                            <tr>
+                              <td>
+                                <p>
+                                <div id="black"></div>темная</p>
+                              </td>
+                              <td>
+                                <p>
+                                <div id="white"></div>светлая</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </li>
+            </a>
+            <a id="phone" href="#">
+              <li class="phone">+7 (963) 201-10-10</li>
+            </a>
+            <a id="sendMe" href="#">
+              <li key="contact_us" class="lang" id="itemList"><span>связаться с нами</span></li>
+            </a>
+            <li class="item-lang-ru"><img class="translate" id="ru" width="32px" src="./image/lanuageIcon/russia.png"
+                alt=""></li>
+            <li class="item-lang-eng"><img id="en" class="translate" width="32px"
+                src="./image/lanuageIcon/united-kingdom.png" alt=""></li>
+
+
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+  </header>
+  <div class="formSend">
+    <div class="ufive-feedback">
+      <section id="feedback">
+        <h1 key="contactus" class="lang">связаться с нами</h1>
+        <form method="POST" action="./form.php">
+
+          <div class="field name-box">
+            <input name="name" type="text" id="name" placeholder="Как Вас зовут?" />
+            <label for="name" class="lang" key="formname">Имя</label>
+          </div>
+
+          <div class="field email-box">
+            <input name="email" type="text" id="email" placeholder="Ваш e-mail адрес" />
+            <label for="email">Эл-почта</label>
+          </div>
+
+          <div class="field msg-box">
+            <textarea name="text" id="msg" rows="4" placeholder="Излагайте ваш вопрос четко и подробно" /></textarea>
+            <label for="msg" class="lang" key="formText">Текст</label>
+          </div>
+
+          <input class="button" type="submit" value="send" class="lang" key="submit" />
+
+          </input>
+        </form>
+      </section>
+    </div>
+    <button class="button" id="backbutton"><a id="backForm" class="lang" key="back" type="submit">назад</a></button>
+  </div>
+  <div class="blur-block">
+    <div class="bckgr-blur"></div>
+    <div class="str-txt">
+      <table>
+        <tr>
+          <td>
+            <pre id="FirstInfo" class="lang" key="infoFist" style="text-align:center;">
+              Академия компьютерных наук им Ильченко
+            Будьте готовы сражаться за свое будующее!!
+           </pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p style='font-size: 15pt;font-family: Verdana;' id="open-Info-school" class="lang" key="aboutInfoSchool">
+              Узнать больше о нашей школе</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="Proffesor">
+
+    <div class="cardProffesor">
+      <div class="content">
+        <div class="up">
+          <img src="./image/author.jpg" alt="" class="photo">
+          <p class="socialdProffesor">
+            <a href="#" class="social-link"><img src="./image/social/telegram.png" width="32px " alt=""></a>
+            <a href="#" class="social-link"><img src="./image/social/vk.png" width="32px " alt=""></a>
+            <a href="#" class="social-link"><img src="./image/social/behance.png" width="32px " alt=""></a>
+          </p>
+        </div>
+        <h3 class="name"><span class="lang" key="fio">Ильченко Евгений</span></h3>
+        <p class="position"><span class="lang" key="position">UI/UX -дизайнер , full stack разработчик</span></p>
+        <p class="description"><span class="lang" key="motto">Будьте готовы сражаться за свое будующее</span></p>
+        <button id="open-moreInfo"><span class="lang" key="more">подробнее</span></button>
+      </div>
+
+    </div>
+    <button class="button" id="backbuttonT"><a id="backFormTeacher" class="lang" key="back"
+        type="submit">назад</a></button>
+  </div>
+  <div class="moreInfo">
+    <table>
+      <tr>
+        <td style="text-align: center"><a class="name" class="lang" href="#">Ильченко Евгений Александрович</a></td>
+      </tr>
+      <tr>
+        <td>10.10.2001</td>
+      </tr>
+      <tr>
+        <td>
+          <pre>
+            Опыт преподавания: 3 года
+            Образование: высшее
+            Специальность: информационные системы и технологии
+            
+            О себе: родился в небольшом городе, изначально 
+            учился не по своей специальности. Когда пришё к платным курса, понял, 
+            насколько это дорого, и решил преподавать в данном заведении, 
+            работая бескорыстно, чтобы в нашей стране 
+            появились нужные специалисты
+            
+            Цель: найти подход к каждому. Если Вы готовы упорно 
+            работать, то я именно тот, кто Вам нужен
+            Девиз: Ваша лучшая инвестиция в жизни – Вы
+           </pre>
+          <div id="special">
+            <span style="margin-left:14.5%;">Специализация:</span>
+            <ol>
+              <li> • WEB-разработка </li>
+              <li>• Python-разработка</li>
+              <li>• SQL</li>
+              <li>• Веб-дизайн</li>
+              </ul>
+          </div>
+
+        </td>
+      </tr>
+    </table>
+    </br></br>
+    <a id="close-moreInfo">назад</a>
+  </div>
+
+  </div>
+  <div class="Lernes">
+    <img class="close" src="./image/cross.png" alt="" width="32px">
+    <table>
+      <tr>
+        <td>
+          <div class="div1">
+            <div class="card" id="react">
+              <!-- Верхняя часть -->
+              <div class="card__top">
+                <!-- Изображение-ссылка -->
+                <a href="#" class="card__image">
+                  <img width="122px" src="./image/re.png" alt="REACT.js" />
+                </a>
+                <div class="card__label"><a class="lang" key="author" href="#">Ильченко E.A</a></div>
+              </div>
+              <!-- Нижняя часть -->
+              <div class="card__bottom">
+                <div class="card__prices">
+                  <div class="card__price card__price--discount"><span class="lang" key="oclock">3000 часов</span>
+                  </div>
+                </div>
+                <!-- Ссылка-на подробнее -->
+                <a href="#" class="card__title">
+                  <p class="lang" key="descriptionReact">
+                    React — это бесплатная внешняя библиотека JavaScript
+                    с открытым исходным кодом для
+                    создания пользовательских интерфейсов
+                    на основе компонентов пользовательского интерфейса.
+                  </p>
+                </a>
+
+                <!-- Кнопка подробнее -->
+                <button class="card__add"><span class="lang" key="more">подробнее</span></button>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="div2">
+            <div class="parent">
+              <div class="div1">
+                <div class="card" id="php">
+                  <!-- Верхняя часть -->
+                  <div class="card__top">
+                    <!-- Изображение-ссылка -->
+                    <a href="#" class="card__image">
+                      <img width="122px" src="./image/PHP.png" alt="REACT.js" />
+                    </a>
+                    <!--фамилия преподователя-->
+                    <div class="card__label"><a class="lang" key="author" href="#">Ильченко E.A</a></div>
+                  </div>
+                  <!-- Нижняя часть -->
+                  <div class="card__bottom">
+                    <!--количество учебных часов-->
+                    <div class="card__prices">
+                      <div class="card__price card__price--discount"><span class="lang" key="oclock">3000 часов</span>
+                      </div>
+                    </div>
+                    <!-- Ссылка-описание курса-->
+                    <a href="#" class="card__title">
+                      <P class="lang" key="descriptionPHP">
+                        PHP — это язык сценариев общего назначения, предназначенный для веб-разработки. Первоначально он
+                        был создан Расмусом Лердорфом в 1993 году и выпущен в 1995 году.
+                      </P>
+                    </a>
+                    <!-- Кнопка подробнее-->
+                    <button class="card__add"><span class="lang" key="more">подробнее</span></button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="div3">
+            <div class="parent">
+              <div class="div1">
+                <div class="card" id="sql">
+                  <!-- Верхняя часть -->
+                  <div class="card__top">
+                    <!-- Изображение-ссылка -->
+                    <a href="#" class="card__image">
+                      <img src="./image/Снимок экрана 2023-01-25 124331.png" alt="REACT.js" />
+                    </a>
+                    <!--фамилия преподователя-->
+                    <div class="card__label"><a class="lang" key="author" href="#">Ильченко E.A</a></div>
+                  </div>
+                  <!-- Нижняя часть -->
+                  <div class="card__bottom">
+                    <!--количество учебных часов-->
+                    <div class="card__prices">
+                      <div class="card__price card__price--discount"><span class="lang" key="oclock">3000 часов</span>
+                      </div>
+                    </div>
+                    <!-- Ссылка-описание курса-->
+                    <a href="#" class="card__title">
+                      <p class="lang" key="descriptionSQL">
+                        Язык структурированных запросов, сокращенно SQL,
+                        представляет собой предметно-ориентированный язык
+                        предназначенный для управления данными,
+                      </p>
+                    </a>
+                    <!-- Кнопка подробнее-->
+                    <button class="card__add"><span class="lang" key="more">подробнее</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="div4">
+            <div class="parent">
+              <div class="div1" id="Djangos">
+                <div class="card" id="Django">
+                  <!-- Верхняя часть -->
+                  <div class="card__top">
+                    <!-- Изображение-ссылка -->
+                    <a href="#" class="card__image">
+                      <img src="./image/images.png" alt="REACT.js" />
+                    </a>
+                    <!--фамилия преподователя-->
+                    <div class="card__label"><a class="lang" key="author" href="#">Ильченко E.A</a></div>
+                  </div>
+                  <!-- Нижняя часть -->
+                  <div class="card__bottom">
+                    <!--количество учебных часов-->
+                    <div class="card__prices">
+                      <div class="card__price card__price--discount"><span class="lang" key="oclock">3000 часов</span>
+                      </div>
+                    </div>
+                    <!-- Ссылка-название товара -->
+                    <a href="#" class="card__title">
+                      <p class="lang" key="descriptionDjango">
+                        Django — это бесплатная веб-инфраструктура с открытым исходным кодом
+                        на основе Python,
+                        которая следует архитектурному шаблону модель-шаблон-представление.
+                      </p>
+
+                    </a>
+                    <!-- Кнопка подробнее-->
+                    <button class="card__add"><span class="lang" key="more">подробнее</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="div5">
+            <div class="parent" id="Javascripts">
+              <div class="div1">
+                <div class="card" id="Javascript">
+                  <!-- Верхняя часть -->
+                  <div class="card__top">
+                    <!-- Изображение-ссылка -->
+                    <a href="#" class="card__image">
+                      <img src="./image/jas.png" alt="REACT.js" />
+                    </a>
+                    <!--фамилия преподователя-->
+                    <div class="card__label"><a class="lang" key="author" href="#">Ильченко E.A</a></div>
+                  </div>
+                  <!-- Нижняя часть -->
+                  <div class="card__bottom">
+                    <!--количество учебных часов-->
+                    <div class="card__prices">
+                      <div class="card__price card__price--discount"><span class="lang" key="oclock">3000 часов</span>
+                      </div>
+                    </div>
+                    <!-- Ссылка-описание курса-->
+                    <a href="#" class="card__title">
+                      <p class="lang" key="descriptionJS">
+                        JavaScript, часто сокращенно JS, — это язык программирования, который является одной
+                        из основных технологий Всемирной паутины, наряду с HTML и CSS.
+                      </p>
+
+                    </a>
+                    <!-- Кнопка подробнее-->
+                    <button class="card__add"><span class="lang" key="more">подробнее</span></button>
+                  </div>
+        </td>
+        <td>
+          <div class="parent" id="engs">
+            <div class="div6">
+              <div class="card" id="eng">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                  <!-- Изображение-ссылка -->
+                  <a href="#" class="card__image">
+                    <img src="./image/eng.jpg" alt="REACT.js" />
+                  </a>
+                  <!--фамилия преподователя-->
+                  <div class="card__label"><a class="lang" key="author" href="#">Ильченко E.A</a></div>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                  <!--количество учебных часов-->
+                  <div class="card__prices">
+                    <div class="card__price card__price--discount"><span class="lang" key="oclock">3000 часов</span>
+                    </div>
+                  </div>
+                  <!-- Ссылка-описание курса-->
+                  <a href="#" class="card__title">
+                    <p class="lang" key="descriptionEng">
+                      Английский —это самы распостранненый язык в мире,
+                      считается официальным языком в
+                      67 странах является базовым и самым важным навыком в работе
+                    </p>
+                  </a>
+                  <!-- Кнопка подробнее-->
+                  <button class="card__add"><span class="lang" key="more">подробнее</span></button>
+                </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+  </div>
+  </br>
+  <div id="open-Info-school">
+    <div class="school">
+      <table>
+        <tr>
+          <td><img src="./image/mutal.jpg" alt="" width="400px"></td>
+          <td class="lang" key="moreInfoSchool">наша школа работает только открыта и мы хотели бы рассказать наши цели и
+            в чем наша выгода</br>
+            цели:Вырастить молодых специалистов и выдать рынку еще больше молодых специалистов</br>
+            основные направления:подготовка к разработке,аналитика,нахождение контактов среди других детей </br>
+            наши услуги абсолютно бесплатны и мы хотим прийти к выводу что мы вам нужны вы спокойно сможете отдать
+            своего ребенка на обучение в нашу школу</br>
+            для малоимущих мы оказывыем помощь в поступление в вузы и устройством на работы так же мы готовим к
+            экзаменам по информатике и алгебре и англискому</br>
+          </td>
+        </tr>
+      </table>
+      </br></br>
+      <a id="back4" class="lang" key="back">назад</a>
+    </div>
+  </div>
+  <div class="contacts">
+    <div id="contact-wrap">
+      <div style="margin-top: 80px;margin-left:40px;">
+        <h2>ILCHENKO EVGENIY SCHOOL</h2>
+        <h4>IT SCHOOL FOR CHILDREN and over 18</h4>
+      </div>
+      <table>
+        <tr>
+          <td>
+            <div id="empty">
+              <div style="position:relative;overflow:hidden;"><a
+                  href="https://yandex.ru/maps/11171/pervouralsk/?utm_medium=mapframe&utm_source=maps"
+                  style="color:#eee;font-size:12px;position:absolute;top:0px;">Первоуральск</a><a
+                  href="https://yandex.ru/maps/54/yekaterinburg/house/ulitsa_antona_valeka_8/YkkYcw5mSUEBQFtsfXR1cXRlZg==/?ll=60.596046%2C56.840862&utm_medium=mapframe&utm_source=maps&z=16"
+                  style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Антона Валека, 8 —
+                  Яндекс Карты</a><iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=60.596046%2C56.840862&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjA4NzYxOBJ40KDQvtGB0YHQuNGPLCDQodCy0LXRgNC00LvQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCV0LrQsNGC0LXRgNC40L3QsdGD0YDQsywg0YPQu9C40YbQsCDQkNC90YLQvtC90LAg0JLQsNC70LXQutCwLCA4IgoNWmJyQhULXWNC&z=16"
+                  width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
+            </div>
+          </td>
+          <td>
+            <table>
+              <tr>
+                <td><img src="./image/phone.png" alt="" width="64px"></td>
+              </tr>
+              <tr>
+                <td>+7 (963) 201-10-10</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id="loco">
+              <table>
+                <tr>
+                  <td><img src="./image/location.png" alt="" width="44px"></td>
+                </tr>
+                <tr>
+                  <td>Pervouralsk, Pushkina 108</td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td>Yekaterinurg, Valeka 2</td>
+                </tr>
+              </table>
+            </div>
+
+          </td>
+          <td>
+            <table>
+              <tr>
+                <td><img src="./image/eng.jpg" alt="" width="44px"></td>
+              </tr>
+              <tr>
+                <td>itschoolIlchenko@gmail.com</td>
+              </tr>
+              <tr>
+                <td>
+                  <table>
+                    <tr>
+                      <td><img src="./image/social/tg.png" alt="" width="44px"></td>
+                </td>
+                <td><img src="./image/social/inst.png" alt="" width="44px"></td>
+          </td>
+          <td><img src="./image/social/ytb.png" alt="" width="44px"></td>
+          </td>
+        </tr>
+      </table>
+      </td>
+      </tr>
+      </table>
+      </td>
+      </tr>
+      </table>
+    </div>
+  </div>
+
+
+  <section class="info" id="news">
+  </section>
+  <section class="item-wrapper">
+    <div class="item-grid-space">
+      <div class="num"></div>
+      <a class="item" href="#">
+        <div>
+          <h1 id="titleNews" key="hearth1" class="lang"><span id="itemList">Теперь мы в Екатеринбурге!!</span></h1>
+          <p style="height:200px;" id="ParagraphNews" key="paragraph1" class="lang">Открыт наш новый центр в городе
+            Екатеринбург улица Антона Валека, 2 ждем вас</p>
+          <div class="date">6/10/2022</div>
+        </div>
+      </a>
+    </div>
+    <div class="item-grid-space" id="news1">
+      <div class="num"></div>
+      <a class="item" href="#">
+        <div>
+          <h1 id="titleNews" key="hearth2" class="lang" id="itemList">Открыт набор заявок в летней лагерь</h1>
+          <p style="height:200px;" key="paragraph2" class="lang">Открыт набор заявок на летний лагерь,Реалист в него
+            включен активный отдых и програмирование</p>
+          <div class="date">13/05/2022</div>
+        </div>
+      </a>
+    </div>
+    <div class="item-grid-space">
+      <div class="num"></div>
+      <a class="item" href="#">
+        <div>
+          <h1 id="titleNews" key="hearth3" class="lang">Изменение расписания</h1>
+          <p style="height:200px;" key="paragraph3" class="lang">Изменение коснутся многиих групп пожалуста поговорите с
+            преподователями</p>
+          <div class="date">23/05/2022</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  </div>
+  </div>
+  <footer style="text-align: center;">
+    <p key="right" class="lang">все права защищены автор сайта Ильченко.E.A</p>
+
+  </footer>
+  <script src="./js/main.js"></script>
+  <script src="./js/translate.js"></script>
+  <script src="./js/scriptForm.js"></script>
+  <script src="./js/changeTheme.js"></script>
+  <script src="./js/buttonBack.js"></script>
+</body>
+
+</html>

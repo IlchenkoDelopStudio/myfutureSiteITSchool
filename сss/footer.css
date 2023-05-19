@@ -1,0 +1,32 @@
+#gmail{
+    width:350px;
+    height: 40px;
+}
+#look{
+    width: 350px;
+}
+#socialIcon{
+    margin-left: 500px;
+}
+#itemSocial{
+    width: 24px;
+}
+
+#back4{
+    color: white;
+}
+#backForm{
+    color: white;
+}
+
+
+#footer{
+    margin-left: 10%;
+    text-align: center;
+}
+
+
+#titleFooter{
+    color: #FFFAFA;
+    font-family: 14pt;
+}

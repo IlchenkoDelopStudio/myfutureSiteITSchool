@@ -1,0 +1,35 @@
+ul{
+    font-family: Tahoma;
+    font-size: 12pt;
+    text-align: center;
+    width: 100%;
+}
+li{
+    display: inline;
+    padding: 20px;  
+    color:white;
+}
+#itemList:hover{
+    background-color: rgb(2,3,52);
+    border-bottom:1px solid white;
+    border-radius: 5px;
+}
+#item{
+    color:white;
+}
+.phone {
+	color: rgb(221, 206, 206);
+	font-size: 16px;
+	font-weight: 900;
+}
+.phone a {
+	color: rgb(221, 206, 206);
+	font-size: 16px;
+	font-weight: 900;
+}
+.traslate{
+background: transparent;
+border: none;
+background-color: steelblue;
+cursor: pointer;
+}

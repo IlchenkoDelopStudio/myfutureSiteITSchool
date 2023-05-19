@@ -1,0 +1,40 @@
+.blur-block {
+    position: relative;
+    margin:0px 30px 0px 30px;
+    }
+    .bckgr-blur{
+    background-image: url("../image/nature.jpg");
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .str-txt {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    }
+
+    #FirstInfo{
+        font-family: Verdana;
+        font-size: 21pt;
+        overflow: visible;
+        margin-left: 100px;
+    }
+    #lastInfo{
+        font-family: Verdana;
+        font-size: 13pt;
+        overflow: visible;
+        margin-left: 300px;
+    }

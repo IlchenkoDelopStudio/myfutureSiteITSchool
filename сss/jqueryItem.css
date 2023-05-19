@@ -1,0 +1,69 @@
+.Proffesor{
+    display: none;   
+    
+}
+.moreInfo{
+    background-color: rgba(120,220,220, 0.4);
+    display: none;
+    font-family:Tahoma;
+    font-size: 14pt;
+}
+.Lernes{
+    font-family:Tahoma;
+    font-size: 13pt;
+    display: none;
+    margin: 0px 20% 0px 20%; 
+}
+
+.contacts{
+    font-family:Tahoma;
+    font-size: 15pt;
+    display: none;
+   
+}
+.school{
+    background: rgb(36,0,2);
+    display: none;
+    font-size: 16pt;
+    font-family: Verdana;
+    padding: 5px;
+}
+.itemSocial:hover{
+    width: 53px;
+}
+
+.formSend{
+    display: none;
+   
+}
+
+#close-moreInfo{
+    background-color: rgb(225,100,100);
+}
+
+#back{
+    background-color: rgb(225,100,100);
+}
+#open-moreInfo{
+    background-color: rgb(105,205,205);
+}
+
+#open-moreInfo:hover{
+    color: white;
+    border: goldenrod;
+    padding: 5px;
+}
+
+#close-moreInfo:hover{
+    color: white;
+    border: goldenrod;
+    padding: 5px;
+}
+
+#back:hover{
+    color: white;
+    border: goldenrod;
+    padding: 5px;
+}
+
+
